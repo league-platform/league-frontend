@@ -14,7 +14,7 @@ import { AppLatestReviewsComponent } from '../../../components/dashboard1/latest
 @Component({
   selector: 'app-dashboard1',
   standalone: true,
-  imports: [
+  imports: [ 
     TablerIconsModule,
     AppCongratulateCardComponent,
     AppCustomersComponent,
