@@ -47,6 +47,7 @@ export function HttpLoaderFactory(http: HttpClient): any {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideHttpClient(withInterceptorsFromDi()),
     provideAnimationsAsync(), // required animations providers
     provideToastr(), // Toastr providers
     provideZoneChangeDetection({ eventCoalescing: true }),
